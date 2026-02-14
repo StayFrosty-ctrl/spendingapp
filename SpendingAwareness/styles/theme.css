@@ -1,0 +1,204 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  
+  /* Grove Color Palette - Warm Earth Tones */
+  --grove-terracotta: #C4785A;
+  --grove-sage: #87A878;
+  --grove-cream: #FAF6F1;
+  --grove-sand: #EDE6DC;
+  --grove-umber: #3D3229;
+  --grove-gray: #7A7067;
+  --grove-dusty-rose: #D4A5A5;
+  --grove-golden: #D4A855;
+  
+  /* Map Grove colors to theme tokens */
+  --background: #FAF6F1;
+  --foreground: #3D3229;
+  --card: #EDE6DC;
+  --card-foreground: #3D3229;
+  --popover: #FAF6F1;
+  --popover-foreground: #3D3229;
+  --primary: #C4785A;
+  --primary-foreground: #FAF6F1;
+  --secondary: #87A878;
+  --secondary-foreground: #3D3229;
+  --muted: #EDE6DC;
+  --muted-foreground: #7A7067;
+  --accent: #D4A855;
+  --accent-foreground: #3D3229;
+  --destructive: #D4A5A5;
+  --destructive-foreground: #3D3229;
+  --border: rgba(61, 50, 41, 0.1);
+  --input: transparent;
+  --input-background: #EDE6DC;
+  --switch-background: #7A7067;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: rgba(196, 120, 90, 0.3);
+  --chart-1: #87A878;
+  --chart-2: #C4785A;
+  --chart-3: #D4A855;
+  --chart-4: #D4A5A5;
+  --chart-5: #7A7067;
+  --radius: 1rem;
+  --sidebar: #FAF6F1;
+  --sidebar-foreground: #3D3229;
+  --sidebar-primary: #C4785A;
+  --sidebar-primary-foreground: #FAF6F1;
+  --sidebar-accent: #EDE6DC;
+  --sidebar-accent-foreground: #3D3229;
+  --sidebar-border: rgba(61, 50, 41, 0.1);
+  --sidebar-ring: rgba(196, 120, 90, 0.3);
+}
+
+.dark {
+  /* Warm Dark Mode */
+  --background: #1E1A16;
+  --foreground: #FAF6F1;
+  --card: #2A2520;
+  --card-foreground: #FAF6F1;
+  --popover: #2A2520;
+  --popover-foreground: #FAF6F1;
+  --primary: #C4785A;
+  --primary-foreground: #FAF6F1;
+  --secondary: #87A878;
+  --secondary-foreground: #FAF6F1;
+  --muted: #2A2520;
+  --muted-foreground: #7A7067;
+  --accent: #D4A855;
+  --accent-foreground: #FAF6F1;
+  --destructive: #D4A5A5;
+  --destructive-foreground: #FAF6F1;
+  --border: rgba(250, 246, 241, 0.1);
+  --input: #2A2520;
+  --ring: rgba(196, 120, 90, 0.3);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --chart-1: #87A878;
+  --chart-2: #C4785A;
+  --chart-3: #D4A855;
+  --chart-4: #D4A5A5;
+  --chart-5: #7A7067;
+  --sidebar: #1E1A16;
+  --sidebar-foreground: #FAF6F1;
+  --sidebar-primary: #C4785A;
+  --sidebar-primary-foreground: #FAF6F1;
+  --sidebar-accent: #2A2520;
+  --sidebar-accent-foreground: #FAF6F1;
+  --sidebar-border: rgba(250, 246, 241, 0.1);
+  --sidebar-ring: rgba(196, 120, 90, 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  
+  /* Grove custom colors */
+  --color-grove-terracotta: var(--grove-terracotta);
+  --color-grove-sage: var(--grove-sage);
+  --color-grove-cream: var(--grove-cream);
+  --color-grove-sand: var(--grove-sand);
+  --color-grove-umber: var(--grove-umber);
+  --color-grove-gray: var(--grove-gray);
+  --color-grove-dusty-rose: var(--grove-dusty-rose);
+  --color-grove-golden: var(--grove-golden);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
